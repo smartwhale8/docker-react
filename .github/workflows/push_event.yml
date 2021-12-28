@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.dev --tag smartwhale/docker-react
     - name: Run the tests
-      run: docker run smartwhale/docker-react npm run test -- --coverage
+      run: docker run smartwhale/docker-react npm run test -- --coverage --watchAll=false
